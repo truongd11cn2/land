@@ -1,0 +1,244 @@
+<html><head><meta http-equiv=Content-Type content='text/html; charset=utf-8'></head>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+
+</title><link rel="stylesheet" type="text/css" href="reset-css.css" tppabs="https://content.batdongsan.com.vn/App_Themes/Home/reset-css.css" media="all" /><link rel="stylesheet" type="text/css" href="comment.css" tppabs="https://content.batdongsan.com.vn/Modules/UserComment/resource/comment.css" media="all" /><script src="jquery-1.7.2.min.js" tppabs="https://content.batdongsan.com.vn/Scripts/jquery-1.7.2.min.js" type="text/javascript"></script><script src="common.js" tppabs="https://content.batdongsan.com.vn/Scripts/common.js" type="text/javascript"></script>
+<style type="text/css">
+.secode {
+text-align: center;
+}
+.error-message {
+color: red;
+}
+.captcha {
+width: 290px;
+}
+</style>
+</head>
+<body>
+<form method="post" action="https://batdongsan.com.vn/Modules/UserComment/CommentPopUp.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="G76xmuiy+338sHlOojHawpb722eJNLClMFgoDcx0mm/CvBJ/59V0ajuZnQEuRpVL8LIs0KTWCS58s8C+kNk06rfd8mizgCVsThA+/5iZTojW/la2" />
+</div>
+
+
+<script src="WebResource.axd-d=x2nkrMJGXkMELz33nwnakJCWkl5jJDMsecKNHgUFz8n_35kZvPvzCUEN1_4wR-hoAXFT0t4UCzsJBH1GKFxWQktagM41&t=634773866700000000.js" tppabs="https://batdongsan.com.vn/WebResource.axd?d=x2nkrMJGXkMELz33nwnakJCWkl5jJDMsecKNHgUFz8n_35kZvPvzCUEN1_4wR-hoAXFT0t4UCzsJBH1GKFxWQktagM41&t=634773866700000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="DpCyQtIQj7RHxinwcS6d7CGBEHEn7uos9T7nhoIHDhj88v2wwElvPdCwKXYO4mNwpNUSGNRMRkqLeILGAxuL9zh5F+F39IqUZwAGv0a43ElNO6+5sQVO8sRK/Nd0W+21TxwaEUuKhmaDpLVDHJd50chylDrGiTIza5lSIFno89CF12xq3cFJc3z1gF3y6zkHsKkaBq/2EOcSXF9MtSFUphkowD1oOwlpLV4lO2ROgnqVniY/NK7pQRNOviP3HNijchvjcdEjyqLpzrMJrT9TuRUgMSM=" />
+</div>
+<div id="main">
+<div id="header">
+<img src="comment-icon.png" tppabs="https://batdongsan.com.vn/Modules/UserComment/resource/comment-icon.png" />
+<p>
+Vui lòng góp ý để chúng tôi có thể phục vụ Quý vị tốt hơn!
+</p>
+</div>
+<div id="main-body">
+<div id="result" style="text-align: center">
+<span id="lbError" style="color:Red;"></span>
+</div>
+<div class="row">
+<div class="left-content">
+Tên liên hệ<span style="color: red">(*)</span>
+</div>
+<div class="right-content">
+<input name="txtName" type="text" id="txtName" class="right-content" required="1" />
+</div>
+<div class="errorMessage">
+</div>
+</div>
+<div class="row">
+<div class="left-content">
+Tiêu đề
+</div>
+<div class="right-content">
+<select name="ddlTitle" id="ddlTitle" class="right-content">
+	<option value="0">G&#243;p &#253; nội dung</option>
+	<option value="1">G&#243;p &#253; chức năng</option>
+	<option value="2">G&#243;p &#253; b&#225;o lỗi</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="left-content">
+Email<span style="color: red">(*)</span>
+</div>
+<div class="right-content">
+<input name="txtEmail" type="text" id="txtEmail" required="1" class="right-content" email="1" />
+</div>
+<div class="errorMessage">
+</div>
+</div>
+<div class="row">
+<div class="left-content">
+Số di động<span style="color: red">(*)</span>
+</div>
+<div class="right-content">
+<input name="txtMobile" type="text" id="txtMobile" required="1" class="right-content" maxlength="15" numbersonly="true" decimal="true" />
+</div>
+<div class="errorMessage">
+</div>
+</div>
+<div class="row">
+<div class="left-content">
+Liên kết
+</div>
+<div class="right-content">
+<input name="txtLink" type="text" id="txtLink" class="right-content" />
+</div>
+</div>
+<div class="row">
+<div class="left-content">
+Nội dung liên hệ <span style="color: red">(Yêu cầu tiếng việt có dấu)</span>
+</div>
+<div class="">
+<textarea name="txtContent" id="txtContent" class="text-area" required="1"></textarea>
+</div>
+<div class="errorMessage">
+</div>
+</div>
+<div class="row">
+<div class="left-content">
+Mã bảo mật
+</div>
+<div class="right-content captcha">
+<input name="secode" type="text" maxlength="4" id="secode" class="secode" placeholder="Nhập mã bảo mật" style="width:120px;" />
+<input type="hidden" name="hddSecode" id="hddSecode" />
+<img id="captcha" style="width: 100px; height: 23px;" src="" alt="" noloaderror="1" />
+<img id="reloadCaptcha" class="reloadCapcha" onmouseover="this.style.cursor='pointer'" onclick="javascript:refreshPublicCaptcha('captcha', 'hddSecode');" title="Đổi mã an toàn" alt="renew capcha" src="icon-reload-1.png" tppabs="https://file4.batdongsan.com.vn/images/Home/images/icon-reload.png" />
+<br />
+<span id="RequiredFieldValidator4" style="color:Red;display:none;">Bạn chưa nhập mã bảo mật</span>
+<br />
+<span id="lblCaptchaError" class="error-message"></span>
+</div>
+</div>
+</div>
+<div id="footer">
+<input type="submit" name="btnRegister" value="Gửi" onclick="return checkEmailcomment();" id="btnRegister" class="button-comment" />
+
+<input type="button" value="Hủy" clientidmode="Static" class="button-comment" id="btnCancel" onclick="Cleartext()" />
+<div id="waiting">
+<div>Hệ thống đang xử lý, bạn vui lòng đợi trong giây lát...</div>
+<img src="waiting.gif" tppabs="https://batdongsan.com.vn/Modules/UserComment/resource/waiting.gif" />
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("RequiredFieldValidator4"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var RequiredFieldValidator4 = document.all ? document.all["RequiredFieldValidator4"] : document.getElementById("RequiredFieldValidator4");
+RequiredFieldValidator4.controltovalidate = "secode";
+RequiredFieldValidator4.errormessage = "Bạn chưa nhập mã bảo mật";
+RequiredFieldValidator4.display = "Dynamic";
+RequiredFieldValidator4.validationGroup = "gr";
+RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator4.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+</body>
+</html>
+<script type="text/javascript">
+
+function showMessage(ctr, msg) {
+if ($(ctr).next().hasClass('errorMessage')) {
+$(ctr).next().html(msg);
+}
+}
+function hideMessage(ctr) {
+if ($(ctr).next().hasClass('errorMessage')) {
+$(ctr).next().hide();
+}
+}
+var focused = false;
+function setFocus(ctr) {
+if (focused == false) {
+focused = true;
+$(ctr).focus();
+}
+}
+function checkEmailcomment() {
+var checked = true;
+var email = document.getElementById('txtEmail');
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+if (email.value == '') {
+alert('Bạn hãy nhập email!');
+email.focus();
+checked = false;
+} else
+if (!filter.test(email.value)) {
+alert('Email sai định dạng,bạn hãy nhập lại');
+email.focus();
+checked = false;
+} else
+if ($('#txtName').val().trim().length == 0) {
+alert('Bạn hãy nhập tên!');
+$('#txtName').focus();
+checked = false;
+} else
+if ($('#txtContent').val().trim().length == 0) {
+alert('Bạn hãy nhập nội dung!');
+$('#txtContent').focus();
+checked = false;
+}
+if (checked) {
+$('#waiting').show();
+}
+return checked;
+}
+$('input[numbersonly=true]').each(function () {
+$(this).keydown(function (event) {
+var decimal = $(this).attr('decimal') == 'true';
+var retval = numbersonly(this, event, decimal);
+if (retval == false) {
+event.preventDefault();
+}
+});
+});
+function Cleartext() {
+$('input[type^=text]').val('');
+$('textarea').val('');
+}
+$(function () {
+refreshPublicCaptcha('captcha', 'hddSecode');
+});
+</script>
